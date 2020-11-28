@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "rimandoaspoesias"
+  "defaultProject": "rimandoaspoesias",
+  "cli": {
+    "analytics": "b0e5609d-e21e-4331-b803-af9a239e1c3d"
+  }
 }

@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+::-moz-selection { background: #f00; }
+::selection { background: #f00; }
+
+body {
+  background: #000;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 8px 0; }
+
+p { margin: 0; }
+
+a {
+  text-decoration: none;
+  &:visited,
+  &:hover {
+    color: #f00;
+  }
+}
+
+iframe {
+  min-height: 300px;
+  pointer-events: none !important;
+}
