@@ -41,10 +41,10 @@ export class AppComponent {
         }
       })
       this.player_2 = new (<any>window).YT.Player('player_2', {
-        height: '50%',
+        height: '50px',
         width: '100%',
         videoId: this.second_video,
-        playerVars: {'autoplay': 0, 'rel': 0, 'controls': 0 },
+        playerVars: {'autoplay': 1, 'rel': 0, 'controls': 0 },
         events: {
           'onReady': (e:any) => {
             this.statusRap += 1

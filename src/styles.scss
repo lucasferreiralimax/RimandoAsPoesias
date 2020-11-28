@@ -21,6 +21,9 @@ a {
 }
 
 iframe {
-  min-height: 300px;
   pointer-events: none !important;
+  &:first-of-type {
+    min-height: 300px;
+  }
 }
+
