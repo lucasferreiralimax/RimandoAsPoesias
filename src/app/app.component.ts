@@ -7,12 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Rimando As Poesias';
-  player_1 = null;
-  player_2 = null;
-  first_video = '_MR-HCQcEpg'
-  second_video = 'rPcejt7GUtQ'
+  player_1:any = null;
+  player_2:any = null;
+  first_video:String = '_MR-HCQcEpg'
+  second_video:String = 'rPcejt7GUtQ'
   current_1:String = this.first_video
   current_2:String = this.second_video
+  statusRap:Number = 0
+  rap:any
+  beat:any
 
   ngAfterViewInit() {
     const doc = (<any>window).document;
@@ -57,10 +60,6 @@ export class AppComponent {
       })
     }
   }
-
-  statusRap = 0
-  rap:any
-  beat:any
 
   intervalRap = setInterval(() => {
     this.playRap()
