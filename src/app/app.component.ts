@@ -13,7 +13,7 @@ export class AppComponent {
   second_video:String = 'rPcejt7GUtQ'
   current_1:String = this.first_video
   current_2:String = this.second_video
-  statusRap:Number = 0
+  statusRap = 0
   rap:any
   beat:any
 
