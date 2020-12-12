@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   statusRap = 0
   rap:any
   beat:any
+  info:any = (new URL((<any>window.location))).searchParams
 
   ngAfterViewInit() {
     const doc = (<any>window).document;
@@ -32,7 +33,7 @@ export class HomeComponent implements OnInit {
       this.player_1 = new (<any>window).YT.Player('player_1', {
         height: '100%',
         width: '100%',
-        videoId: this.first_video,
+        videoId: this.info.get('info') == '2L' ? 'scRG-OHH2wY' : this.first_video,
         playerVars: {'autoplay': 0, 'rel': 0, 'controls': 0 },
         events: {
           'onReady': (e:any) => {
@@ -47,7 +48,7 @@ export class HomeComponent implements OnInit {
       this.player_2 = new (<any>window).YT.Player('player_2', {
         height: '100px',
         width: '100%',
-        videoId: this.second_video,
+        videoId: this.info.get('info') == '2L' ? 'Y_9_0DZ_aXc' : this.second_video,
         playerVars: {'autoplay': 1, 'rel': 0, 'controls': 0 },
         events: {
           'onReady': (e:any) => {
@@ -68,9 +69,15 @@ export class HomeComponent implements OnInit {
 
   playRap() {
     if(this.statusRap === 2) {
-      setInterval(() => {
-        this.rap.target.playVideo()
-      }, 15000)
+      if(this.info.get('info') == '2L') {
+        setInterval(() => {
+          this.rap.target.playVideo()
+        }, 5000)
+      } else {
+        setInterval(() => {
+          this.rap.target.playVideo()
+        }, 15000)
+      }
       this.beat.target.playVideo()
       clearInterval(this.intervalRap)
     }
