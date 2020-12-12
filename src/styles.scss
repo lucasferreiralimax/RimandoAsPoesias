@@ -6,6 +6,12 @@
 body {
   background: #000;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #fff;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 { margin: 8px 0; }
@@ -21,9 +27,10 @@ a {
 }
 
 iframe {
-  pointer-events: none !important;
+  //pointer-events: none !important;
   &:first-of-type {
     min-height: 300px;
   }
 }
 
+.spacer { flex: 1; }
