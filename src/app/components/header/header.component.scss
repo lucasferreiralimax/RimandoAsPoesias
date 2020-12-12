@@ -1,0 +1,25 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  padding: 0 1em;
+  p:first-of-type { margin-left: 1em; }
+  img {
+    margin: 0 16px;
+    filter: grayscale(100%);
+  }
+}
+
+#youtube-logo {
+  height: 40px;
+  display: block;
+  &:hover { transform: scale(1.2); }
+  svg { fill: #f00; }
+}

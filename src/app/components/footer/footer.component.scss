@@ -1,0 +1,18 @@
+footer {
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 960px;
+  a {
+    display: flex;
+    align-items: center;
+    transform: translateX(-6px);
+    color: #fff;
+  }
+  strong {
+    color: #f00;
+    margin: 0 3em;
+  }
+}
