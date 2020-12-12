@@ -1,6 +1,11 @@
 {
   "name": "rimandoaspoesias",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "lucasferreiralimax (https://github.com/lucasferreiralimax)",
+  "repository": "https://github.com/lucasferreiralimax/rimandoaspoesias",
+  "bugs": {
+    "url": "https://github.com/lucasferreiralimax/rimandoaspoesias/issues"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
