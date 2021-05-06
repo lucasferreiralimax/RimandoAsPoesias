@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   player_1:any = null;
   player_2:any = null;
   first_video:String = '_MR-HCQcEpg'
-  second_video:String = 'rPcejt7GUtQ'
+  second_video:String = 'vcKI75Af-AA'
   current_1:String = this.first_video
   current_2:String = this.second_video
   statusRap = 0
