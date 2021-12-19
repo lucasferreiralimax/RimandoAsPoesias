@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   player_2:any = null;
   first_video:String = '_MR-HCQcEpg'
   second_video:String = 'vcKI75Af-AA'
+  first_video_list:any = ['_MR-HCQcEpg', 'scRG-OHH2wY', 'AOKKXDfPGQo', 'plKWnc9UftE', 'sUO2nPIJ4Mg', 'gqGe7uJX2iM', 'vHEdiBBV6wc']
+  second_video_list:any = ['vcKI75Af-AA', 'Y_9_0DZ_aXc']
   current_1:String = this.first_video
   current_2:String = this.second_video
   statusRap = 0
@@ -85,7 +87,7 @@ export class HomeComponent implements OnInit {
 
   playVideoStatus1(event:any) {
     if (event.data == (<any>window).YT.PlayerState.ENDED) {
-      let id = "scRG-OHH2wY"
+      let id = this.first_video_list[Math.floor(Math.random() * this.first_video_list.length)]
 
       if(this.current_1 == id) {
         this.current_1 = this.first_video
@@ -99,7 +101,7 @@ export class HomeComponent implements OnInit {
 
   playVideoStatus2(event:any) {
     if (event.data == (<any>window).YT.PlayerState.ENDED) {
-      let id = "Y_9_0DZ_aXc"
+      let id = this.second_video_list[Math.floor(Math.random() * this.second_video_list.length)]
 
       if(this.current_2 == id) {
         this.current_2 = this.second_video
